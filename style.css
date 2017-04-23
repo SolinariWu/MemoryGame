@@ -1,0 +1,166 @@
+﻿/*MemoryGame css stylesheet */
+
+div {
+    font-size: 30px;
+}
+
+.container {
+    width: 132px;
+    height: 160px;
+    position: relative;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -ms-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -ms-transition: -ms-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+    .card.flipped {
+        -webkit-transform: rotateY( 180deg );
+        -moz-transform: rotateY( 180deg );
+        -ms-transform: rotateY( 180deg );
+        -o-transform: rotateY( 180deg );
+        transform: rotateY( 180deg );
+    }
+
+    .card img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+
+
+    .card .back {
+        background: blue;
+        -webkit-transform: rotateY( 180deg );
+        -moz-transform: rotateY( 180deg );
+        -ms-transform: rotateY( 180deg );
+        -o-transform: rotateY( 180deg );
+        transform: rotateY( 180deg );
+    }
+
+.message {
+    width: 330px;
+    text-align: center;
+}
+
+.gvDGD {
+    width: 100%;
+    text-align: center;
+    font-family: 'Microsoft JhengHei';
+    font-size: 14px;
+}
+
+    .gvDGD td {
+        border-bottom: 1px solid #ededed;
+        padding: 15px 5px;
+    }
+
+    .gvDGD th {
+        border-bottom: 1px solid #999999;
+        color: #0d1060;
+        font-family: "Microsoft JhengHei";
+    }
+
+    .gvDGD .PagerCss TD {
+        font-family: 'Metrophobic', sans-serif;
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+        .gvDGD .PagerCss TD A:link {
+            color: #9A9A9A;
+        }
+
+        .gvDGD .PagerCss TD A:hover {
+            color: #565656;
+        }
+
+        .gvDGD .PagerCss TD SPAN {
+            color: #3E62AD;
+        }
+/*切換樣式*/
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+/*標題樣式*/
+.s_c {
+    width: 1000px;
+    text-align: center;
+}
+
+    .s_c ul {
+        clear: both;
+        margin: 0;
+    }
+
+    .s_c li {
+        list-style: none;
+        float: left;
+        position: relative;
+        width: 105px;
+    }
+/**/
+.c_0 {
+    background-color: #CCCCCC;
+}
+/*隱藏*/
+.c_1 {
+    background-color: #CCCCCC;
+}
+/*顯示*/
+/**/
+.s_b {
+    border: 1px solid #666;
+    height: 160px;
+    width: 440px;
+}
+
+/**/
+/*切換樣式结束*/
+input.text {
+    margin-bottom: 12px;
+    width: 95%;
+    padding: .4em;
+}
+
+fieldset {
+    padding: 0;
+    border: 0;
+    margin-top: 25px;
+}
+
+.ui-dialog .ui-state-error {
+    padding: .3em;
+}
+
+.validateTips {
+    border: 1px solid transparent;
+    padding: 0.3em;
+}
